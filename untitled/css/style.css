@@ -1,0 +1,259 @@
+body{
+    margin:0;
+/*    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    width: 1025px;
+    height: 2900px;*/
+}
+
+.one {
+    padding-top: 48px;
+    padding-left: 70px;
+    color: white;
+    width: 678px;
+    height: 403px;
+}
+#one {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-family: monospace;
+    width: 165px;
+    text-shadow: 1px 1px 2px black, 0 0
+}
+
+.wrapper{
+    margin: 0;
+    background-image: url(.././img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 744px;
+    height: 2900px;
+}
+#two {
+    margin-top:0;
+    margin-bottom:0;
+    font-size: 49px;
+    font-family: monospace;
+    text-shadow: 1px 1px 2px black, 0 0;
+}
+
+.two {
+    height: 398px;
+    padding-top: 42px;
+    padding-left: 334px;
+    font-family: monospace;
+}
+#header {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #0A68BF;
+}
+#text {
+    margin-top: 8px;
+    letter-spacing: -1px;
+}
+#info {
+    letter-spacing: -1px;
+    font-size: 14px;
+    font-family: monospace;
+    margin-top: -1px;
+}
+
+#header_prog {
+    font-family: monospace;
+    font-size: 19px;
+    letter-spacing: -1px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #0A68BF;
+}
+
+#unord_list {
+    padding-left: 2px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-family: monospace;
+    margin-top: 0;
+    list-style: none;
+}
+
+#unord_list li:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+}
+li#num_list2 {
+    margin-top: 15px;
+}
+.three {
+    height: 406px;
+    padding-left: 447px;
+    padding-top: 18px;
+    font-family: monospace;
+    margin: 0;
+}
+#header-game {
+    font-size: 29px;
+    letter-spacing: -2px;
+    color: #0A68BF;
+}
+#one-two {
+    padding-top: 7px;
+    letter-spacing: -2px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: #FF5605;
+}
+p#two-three {
+    margin-top: 0px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+#three-four {
+    margin-top: 10px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    color: #FF5605;
+    margin-bottom: 0;
+}
+#four-five {
+    margin-top: 10px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+#five-six {
+    margin-top: 10px;
+    letter-spacing: -2px;
+    font-size: 14px;
+    color: #FF5605;
+    margin-bottom: 0;
+}
+#indiv {
+    margin-top: 8px;
+    font-size: 14px;
+    letter-spacing: -2px;
+}
+.prize {
+    height: 314px;
+    font-family: monospace;
+}
+#medals {
+    padding-top: 29px;
+    padding-left: 177px;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #0A68BF;
+}
+#sale {
+    padding-top: 36px;
+    padding-left: 177px;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #0A68BF;
+}
+#sertif {
+    padding-top: 38px;
+    padding-left: 130px;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #FF5605;
+}
+
+.input-box {
+    font-size: 0;
+    font-family: monospace;
+}
+
+.input-box__item{
+    display: inline-block;
+}
+.col1 {
+    width: 83%;
+    padding-left: 66px;
+    padding-top: 12px;
+}
+.col2 {
+    width: 40%;
+    padding-top: 9px;
+    padding-left: 67px;
+}
+.co22 {
+    padding-left: 18px;
+    width: 40%;
+}
+.input-box__item label{
+    display: block;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.input-box__item label,
+.input-box__item input{
+    width:100%;
+    box-sizing: border-box;
+    height: 28px;
+}
+form {
+    height: 335px;
+}
+.regis {
+    margin-top: 53px;
+    font-family: monospace;
+    font-size: 30px;
+    padding-left: 67px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: #FF5605;
+}
+
+hr {
+    margin-left: 69px;
+    margin-right: 63px;
+    border-width: 2px;
+    /* color: white; */
+}
+#prim {
+    height: 48px;
+}
+input[type="submit"] {
+    margin-left: 451px;
+    font-size: 19px;
+    margin-top: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contacts_text {
+    width: 41%;
+    float: left;
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.contacts_text span{
+    color: #0A68BF;
+}
+.in1 {
+    padding-left: 70px;
+    padding-top: 19px;
+}
+.in2 {
+    padding-left: 69px;
+    padding-top: 4px;
+}
+.in3 {
+    padding-top: 20px;
+    padding-left: 6px;
+}
+.in4 {
+    padding-top: 9px;
+    padding-left: 6px;
+}
