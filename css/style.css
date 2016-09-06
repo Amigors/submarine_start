@@ -23,12 +23,12 @@ body{
 }
 
 .wrapper{
-    margin: 0;
-    background-image: url(.././img/background.jpg);
+    margin: auto;
+    background-image: url(.././img/background2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 744px;
-    height: 2900px;
+    height: 2150px;
 }
 #two {
     margin-top:0;
@@ -216,20 +216,25 @@ form {
 hr {
     margin-left: 69px;
     margin-right: 63px;
-    border-width: 2px;
-    /* color: white; */
+    border-width: 1px;
+    color: white;
+    border-style: double;
 }
 #prim {
     height: 48px;
 }
-input[type="submit"] {
+.applic {
     margin-left: 451px;
     font-size: 19px;
-    margin-top: 7px;
+    margin-top: 23px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
+    background: #FF5605;
+    border: none;
+    border-radius: 6px;
+    color: white;
 }
 .contacts_text {
     width: 41%;
