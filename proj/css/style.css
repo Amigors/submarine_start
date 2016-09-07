@@ -201,10 +201,10 @@ p#two-three {
     height: 28px;
 }
 form {
-    height: 335px;
+    height: 352px;
 }
 .regis {
-    margin-top: 53px;
+    margin-top: 23px;
     font-family: monospace;
     font-size: 30px;
     padding-left: 67px;
@@ -221,7 +221,9 @@ hr {
     border-style: double;
 }
 #prim {
-    height: 48px;
+    resize: none;
+    width: 604px;
+    height: 108px;
 }
 .applic {
     margin-left: 451px;
