@@ -1,47 +1,18 @@
-addEvent(window, 'load', windowLoad);
+$(".link").click(function( event ) {
+    event.preventDefault();
+    var formData = new FormData($('form')[0]);
+    $.ajax({
+        type: "POST",
+        processData: false,
+        contentType: false,
+        url: "handler.php",
+        data: formData
+    }).done(function (data) {
+        if (data) {
+           console.log('send');
+        } else {
 
-/* Кроссбраузерное добавление обработчика события */
-function addEvent(obj, evType, fn){
-    if (obj.addEventListener) {
-        obj.addEventListener(evType, fn, false);
-    } else if (obj.attachEvent) {
-        obj.attachEvent('on' + evType, fn);
-    }
-}
-
-/* Получаем родительскую форму для элемента */
-function getParentForm(obj) {
-    while ((obj = obj.parentNode)) {
-        if (obj.nodeName == 'FORM') {
-            break;
+            console.log('not send');
         }
-    }
-    return obj;
-}
-
-/* Ищем все submit-кнопки с классом link и заменяем их на ссылки */
-function windowLoad() {
-    var buttons = document.getElementsByTagName('input');
-    for (var i = 0; i < buttons.length ; i++) {
-        if (buttons[i].getAttribute('type') == 'submit' && buttons[i].className == 'link') {
-            var link = document.createElement('a');
-            link.appendChild(document.createTextNode(buttons[i].getAttribute('value')));
-            link.setAttribute('href', '#');
-            addEvent(link, 'click', linkClick);
-
-            var parent = buttons[i].parentNode;
-            parent.removeChild(buttons[i]);
-            parent.appendChild(link);
-        }
-    }
-}
-
-/* Отправляем форму по нажатию на ссылку */
-function linkClick(e) {
-    var e = window.event || e;
-    var target = e.target || e.srcElement;
-    var parentForm = getParentForm(target);
-    parentForm.submit();
-
-    if (window.event) { e.returnValue = false; } else { e.preventDefault(); }
-}
+    });
+});

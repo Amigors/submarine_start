@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Ранние старты</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="sendjs.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -72,15 +71,15 @@
                 <b>Участникам чемпионата  - скидки 20% на проживание в<br>хостеле "Подводная лодка".</b>
             </p>
         </div>
-        <form action="handler.php" method="post">
+        <form method="post">
             <h1 class="regis">Регистрация</h1>
             <hr>
             <div class="input-box">
                 <div class="input-box__item col2"><label>Имя</label><input name="fn"></div>
-                <div class="input-box__item co22"><label>Номер телефона</label><input name="tel"></div>
+                <div class="input-box__item co22"><label>Номер телефона</label><input name="tel" type="tel"></div>
                 <div class="input-box__item col1"><label >Примечания:</label><textarea name="note" id="prim"></textarea></div>
             </div>
-            <button class="applic">Отправить заявку</button>
+            <button class="applic link">Отправить заявку</button>
             <!--<input class="applic" type="submit" value="Отправить заявку"
                       formaction="handler.php" formmethod="post">-->
         </form>
@@ -91,6 +90,7 @@
             <div class="contacts_text in2"><b><span>По всем вопросам звоните:</span> +79650908986</b></div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="sendjs.js"></script>
 </body>
 </html>
