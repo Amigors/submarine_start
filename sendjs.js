@@ -8,8 +8,8 @@ $(".link").click(function( event ) {
         url: "handler.php",
         data: formData
     }).done(function (data) {
-        if (data) {
-           console.log('send');
+        if (data=="true") {
+            console.log('send');
         } else {
 
             console.log('not send');
